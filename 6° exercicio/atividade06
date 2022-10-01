@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner leitura = new Scanner(System.in);
+        
+        System.out.print("Digite o raio: ");
+        double raio = leitura.nextDouble();
+
+        leitura.close();
+
+        double area = Math.PI * Math.pow(raio,2);
+        
+        System.out.println("O valor da área é: "+area);
+    }
+}
