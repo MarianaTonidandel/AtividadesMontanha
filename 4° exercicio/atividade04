@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner leitura = new Scanner(System.in);        
+        
+        System.out.print("Digite a 1° nota: ");
+        int nota1 = leitura.nextInt();
+
+        System.out.print("Digite a 2° nota: ");
+        int nota2 = leitura.nextInt();
+
+        System.out.print("Digite a 3° nota: ");
+        int nota3 = leitura.nextInt();
+
+        System.out.print("Digite a 4° nota: ");
+        int nota4 = leitura.nextInt();
+        
+        leitura.close();
+
+        double media = (nota1+nota2+nota3+nota4)/4;
+
+        System.out.println("A média das notas é: "+media);
+    }
+}
