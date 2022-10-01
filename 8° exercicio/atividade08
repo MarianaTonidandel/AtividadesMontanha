@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {  
+        Scanner leitura = new Scanner(System.in);
+
+        System.out.println("Qual seu salário por hora?");
+        double valor = leitura.nextDouble();
+
+        System.out.println("Quantas horas trabalha no mês?");
+        double horas = leitura.nextDouble();
+
+        leitura.close();
+
+        double salario = valor*horas;
+
+        System.out.println("O seu salário mensal é de: "+salario);
+    }
+}
